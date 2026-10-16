@@ -1,0 +1,50 @@
+{
+  "id": "B",
+  "length_m": 4,
+  "EI_kNm2": 16000,
+  "source_ref": "synthetic benchmark",
+  "idealization_status": "TEST_ONLY",
+  "supports": [
+    {
+      "x_m": 0,
+      "vertical_fixed": true,
+      "rotation_fixed": false
+    },
+    {
+      "x_m": 4,
+      "vertical_fixed": true,
+      "rotation_fixed": false
+    }
+  ],
+  "load_cases": [
+    {
+      "id": "D"
+    }
+  ],
+  "combinations": [
+    {
+      "id": "C",
+      "limit_state": "TEST",
+      "source_ref": "synthetic",
+      "factors": {
+        "D": 1
+      }
+    }
+  ],
+  "self_weight": {
+    "mode": "included_in_loads",
+    "source_ref": "not applied in benchmark"
+  },
+  "loads": [
+    {
+      "id": "q",
+      "case": "D",
+      "type": "distributed",
+      "x1_m": 0,
+      "x2_m": 4,
+      "w1_kNm": -5,
+      "w2_kNm": -5
+    }
+  ],
+  "schema": "octo-planar-beam/1"
+}

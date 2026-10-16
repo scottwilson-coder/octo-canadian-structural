@@ -1,0 +1,119 @@
+{
+  "units": {
+    "length": "m",
+    "force": "kN",
+    "stress": "kN/m2"
+  },
+  "analysis": "first_order_linear",
+  "nodes": [
+    {
+      "id": "A",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "supports": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "B",
+      "xyz": [
+        4,
+        0,
+        0
+      ],
+      "supports": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "members": [
+    {
+      "id": "AB",
+      "i": "A",
+      "j": "B",
+      "material": "steel",
+      "section": "S",
+      "rotation_deg": 0,
+      "releases": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "steel",
+      "E": 200000000.0,
+      "G": 76923000.0,
+      "nu": 0.3,
+      "weight_density": 78.5
+    }
+  ],
+  "sections": [
+    {
+      "id": "S",
+      "A": 0.01,
+      "Iy": 4e-05,
+      "Iz": 8e-05,
+      "J": 1e-05
+    }
+  ],
+  "load_cases": [
+    {
+      "id": "D"
+    },
+    {
+      "id": "L"
+    }
+  ],
+  "combinations": [
+    {
+      "id": "C",
+      "factors": {
+        "D": 1
+      },
+      "limit_state": "TEST",
+      "source_ref": "Independent elastic benchmark"
+    }
+  ],
+  "self_weight": {
+    "mode": "included_in_loads",
+    "source_ref": "Benchmark neglects self-weight"
+  },
+  "loads": [
+    {
+      "id": "q",
+      "type": "member_distributed",
+      "target": "AB",
+      "case": "D",
+      "direction": "FY",
+      "w1": -5,
+      "w2": -5,
+      "x1": 0,
+      "x2": 4
+    }
+  ]
+}

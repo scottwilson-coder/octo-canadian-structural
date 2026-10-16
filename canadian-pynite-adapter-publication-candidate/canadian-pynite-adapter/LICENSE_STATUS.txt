@@ -1,0 +1,6 @@
+Local adapter, tests and packaging: ownership/publication and license selection
+require rights-holder confirmation. No new redistribution or open-source license
+grant is made by this archive. See PUBLICATION_CHECKLIST.md.
+
+The upstream PyNite MIT license is reproduced in licenses/PyNite-MIT.txt and
+applies only to the upstream software. Third-party software retains its own terms.

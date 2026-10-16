@@ -1,0 +1,44 @@
+[
+  {
+    "file": "octo_pynite/__init__.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "eaf50969c2076a6910adca88634e76e14b5378f56ae7bff24781dee8add724c5",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/adapter.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "eaa860b2460d0a1eb96ba575cd6281d02715bca7c95d635a50a8211abb0758c2",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/canonical.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "0eb8d6c33c6514a3337a4c0b7e1f4cd9147d59adc3eaa7753a7b97c5af667316",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/combinations.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "105c161895cab169f54f9638db23d456f05309376fc13ff02b063ce4173e99a0",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/extrema.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "bae0411478d470ad96708e5b7fe6122feeb77e3f860c5fce436f1964fca537cd",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/report.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "2ba65fff67b2eba52ca72c6a2980098e1dc110142c14ee3606c43da7d1c34ca4",
+    "change": "none"
+  },
+  {
+    "file": "octo_pynite/planar.py",
+    "origin": "existing local adapter 0.2 development",
+    "source_sha256": "b19e5aaf3686d89fd06e5067d4adb9256a72bd25d7a5eac920a214b2c7005beb",
+    "change": "Removed resistance-check function and its vendor dependency"
+  }
+]

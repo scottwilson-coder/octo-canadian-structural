@@ -1,0 +1,27 @@
+{
+  "date_utc": "2026-10-16",
+  "python": "3.12",
+  "platform": "Linux",
+  "unit_tests": {
+    "count": 54,
+    "result": "PASS",
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "cli_examples": {
+    "cantilever": "PASS JSON/HTML/CSV; balanced; strength NOT_CHECKED",
+    "reduced_beam": "PASS JSON/HTML/CSV; balanced; strength NOT_CHECKED"
+  },
+  "independent_clean_install": "NOT_RUN",
+  "other_platforms": "NOT_RUN",
+  "public_repository_publication": "NOT_REQUESTED_NOT_PERFORMED",
+  "publication_license_clearance": "UNRESOLVED; see PUBLICATION_CHECKLIST.md",
+  "privacy_audit": {
+    "method": "Whitelist extraction, source review and pattern scan of every archive text file",
+    "client_models_results_drawings": "EXCLUDED",
+    "vendor_wood_and_historical_tables": "EXCLUDED",
+    "embedded_dependencies_binaries": "NONE",
+    "private_path_project_id_email_token_pattern_matches": 0,
+    "limitations": "Pattern scan and manual review are not a formal security audit."
+  },
+  "archive_readback": "CRC, safe relative paths, SHA256 manifest and extracted regression rerun verified during packaging"
+}
